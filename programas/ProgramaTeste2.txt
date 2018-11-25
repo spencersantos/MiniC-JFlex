@@ -3,38 +3,29 @@
 
 // Programa Teste Projeto Compiladores
 
-/*
+int main() {
+    
+  int numero = 20;
+  float valor = 2.5;
+  char caractere = 'A';
+    
+  printf("\n Hello World \n" );
+    
+  int resultado = fatorial(numero);
+    
+  return 1;
 
-  *** Autor: Hilario Tomaz
-  -- Data: 03/09/2018
-   
-*/
-
-int main()
-{
-    
-    int a = 20;
-    float f = 2.5;
-    
-    char a = 'A';
-    
-    char b = '\n';
-    
-    printint(fatorial(5));
-    
-    printf("\n Hello World \n" );
-    
-    return 1;
 }
 
-int fatorial(int n)
-{
-    int res;
+int fatorial(int n) {
+    
+  int res;
 
-    if (n < 1)
-        res = 1;
-    else
-        res = n * fatorial(n - 1);
+  if (n < 1)
+    res = 1;
+  else
+    res = n * fatorial(n - 1);
 
-    return res;
+  return res;
+
 }
